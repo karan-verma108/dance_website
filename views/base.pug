@@ -1,0 +1,22 @@
+//- base.pug | This is our basic template, we will fill details/values of various templates in their respective files
+doctype html 
+html
+  head
+    title Karan Dance Academy
+    block scripts
+    block style 
+  body
+
+    nav#navbar 
+             ul
+                div#logo 
+                    img(src='/static/img/logo-dance.png')
+                    | KDA 
+                li #[a(href='/') Home]
+                li #[a(href='/') About]
+                li #[a(href='/') Join]
+                li #[a(href='/contact') Contact]
+                li #[a(href='/') Services]
+    block content
+    footer#footer 
+            | © Copyright KaranDanceAcademy.com | All Rights Reserved 2023

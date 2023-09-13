@@ -1,0 +1,45 @@
+extends base.pug  
+
+block scripts 
+    script(src='/static/index.js')
+
+block style
+    style 
+      include ../static/style.css 
+
+block content 
+    section#introSection 
+             div WELCOME TO KARAN DANCE ACADEMY
+             div.small DANCE INDIA DANCE  
+            
+    section#missionSection 
+             h2 Our mission
+             div.card 
+              h3 Incredible Dance Moves 
+              div.card-box 
+                  div.card-img
+                      img(src='/static/img/pic1.png') 
+                  div.card-content 
+                      p We will teach you incredible dance moves that will blow your mind !
+             div.card 
+              h3 24/7 Guidance 
+              div.card-box 
+                  div.card-img
+                      img(src='/static/img/pic2.png') 
+                  div.card-content 
+                      p We also provide 24/7 guidance so that you never feel alone in the process 
+             div.card 
+              h3 Award Winning Coaches
+              div.card-box 
+                  div.card-img
+                      img(src='/static/img/pic3.png') 
+                  div.card-content 
+                      p We have plenty of award winning coaches who will guide you 
+
+    section#sponsorSection 
+            h3 Our sponsors
+            div#sponsor 
+                img(src="/static/img/client1.png", alt="sponsor image", class = 'spImage')
+                img(src="/static/img/client2.png", alt="sponsor image", class = 'spImage')
+                img(src="/static/img/client3.png", alt="sponsor image", class = 'spImage')
+                img(src="/static/img/client4.png", alt="sponsor image", class = 'spImage')
